@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav id="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <section id="home" class="section">
+    <div class="intro">
+      <img src="img.jpg" alt="Profile Photo" class="profile-img"/>
+      <h2>Hello, I'm</h2>
+      <h2 class="typewriter"><span>I am a Web Developer</span></h2>
+      <p class="subtitle">Crafting modern, responsive & beautiful websites with precision and passion.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section card">
+    <h2>About Me</h2>
+    <p>
+      I am a <strong>BSc IT student</strong> having an interest in becoming a <strong>MERN stack developer</strong>. I'm looking forward to opportunities to show my skills and continuously upgrade them through new challenges and learning experiences.
+    </p>
+  </section>
+
+  <section id="skills" class="section card">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>MongoDB</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section card">
+    <h2>My Projects</h2>
+    
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <ul>
+        <li>Responsive personal portfolio using HTML, CSS & JS.</li>
+        <li>Features dark mode, animations, and mobile support.</li>
+        <li>Deployed on GitHub Pages with clean UI.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Pollution Awareness Website</h3>
+      <ul>
+        <li>Educational Content</li>
+        <li>Real-time Pollution Stats</li>
+        <li>User-friendly Design</li>
+      </ul>
+    </div>
+
+    <div class="project">
+        <h3>Weather App</h3>
+        <ul>
+          <li>Fetches live weather data from an API.</li>
+          <li>Updates dynamically based on city input.</li>
+          <li>Fully responsive with dark UI theme.</li>
+        </ul>
+      </div>
+  </section>
+
+  <section id="experience" class="section card">
+    <h2>Experience</h2>
+    
+    <div class="experience">
+      <h3>Frontend Intern – ProdigyInfotech</h3>
+      <p>
+        Built multiple responsive landing pages using HTML, CSS & JavaScript. Collaborated with designers to create accessible UIs.
+      </p>
+    </div>
+
+    <div class="experience">
+      <h3>IT content developer Intern – Dharani life skills</h3>
+      <p>
+        Developed educational content for IT courses. Assisted in creating interactive learning modules and quizzes.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. Built with ❤️</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
