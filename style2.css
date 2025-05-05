@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #0e0e0e;
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    font-weight: 700;
+    color: #61dafb;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #61dafb;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .intro {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #61dafb;
+    margin-bottom: 1rem;
+  }
+  
+  .typewriter {
+    font-size: 1.8rem;
+    color: #61dafb;
+    overflow: hidden;
+    border-right: 0.15em solid #61dafb;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #61dafb }
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #61dafb;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 8px rgba(97, 218, 251, 0.2);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .skills-list li {
+    list-style: none;
+    background-color: #222;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .skills-list li:hover {
+    background-color: #61dafb;
+    color: #000;
+  }
+  
+  .project, .experience {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .project h3, .experience h3 {
+    color: #61dafb;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project ul, .experience p {
+    color: #ccc;
+    margin-left: 1rem;
+  }
+  
+  footer {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      background: #1a1a1a;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      display: none;
+      padding: 1rem;
+    }
+  
+    nav ul.show {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
